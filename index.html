@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Medifit</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="left-header">
+        <img src="image/logoheader.png" alt="" />
+      </div>
+
+      <div class="center-header">
+        <ul>
+          <li>Home</li>
+          <li>Shops</li>
+          <!-- Phần dropdown được thay bằng custom-dropdown mới -->
+          <li class="custom-dropdown dropdown-toggle">
+            Pages
+            <ul class="dropdown-menu">
+              <li><a href="#" class="dropdown-item">Blog</a></li>
+              <li><a href="#" class="dropdown-item">FAQ</a></li>
+              <li><a href="#" class="dropdown-item">Login</a></li>
+              <li><a href="#" class="dropdown-item">Register</a></li>
+            </ul>
+          </li>
+          <li>About</li>
+          <li>Contact</li>
+        </ul>
+      </div>
+
+      <div class="right-header">
+    <button id="open-search-modal"><i class="fa-solid fa-magnifying-glass"></i></button>
+    
+    <div class="cart-wrapper">
+        <i class="fas fa-cart-shopping" id="open-cart-btn"></i>
+        <span id="cart-count" class="badge">0</span> 
+    </div>
+</div>
+    </header>
+    <!--NỔI BẬT  -->
+    <section class="noibat">
+      <div class="caption-noibat">
+        <h1>
+          Your trusted <br />
+          care now <br />
+          and always
+        </h1>
+        <p>
+          For the best results, align your health needs with <br />
+          your medication plan.
+        </p>
+        <button>
+          <i class="fas fa-bag-shopping"></i>
+          Shop now
+        </button>
+      </div>
+      <div class="hinhanh">
+        <img src="../btap gk/image/hopthuoc.png" alt="" />
+      </div>
+    </section>
+    <!-- Tiêu Đề -->
+    <section class="tieude-chung">
+      <h1>Shop by Category</h1>
+    </section>
+    <!-- chứa 6 mục ảnh -->
+    <section class="chua6anh">
+      <div class="container-chua6anh">
+        <div class="chuaanh">
+          <img src="../btap gk/image/hinhtron1.png" alt="" />
+        </div>
+        <h3>Medicine</h3>
+        <p>32 Items</p>
+      </div>
+
+      <div class="container-chua6anh">
+        <div class="chuaanh">
+          <img src="../btap gk/image/hinhtron2.png" alt="" />
+        </div>
+        <h3>Health core</h3>
+        <p>20 Items</p>
+      </div>
+
+      <div class="container-chua6anh">
+        <div class="chuaanh">
+          <img src="../btap gk/image/hinhtron3.png" alt="" />
+        </div>
+        <h3>Beauty care</h3>
+        <p>30 Items</p>
+      </div>
+
+      <div class="container-chua6anh">
+        <div class="chuaanh">
+          <img src="../btap gk/image/hinhtron4.png" alt="" />
+        </div>
+        <h3>Fitness</h3>
+        <p>35 Items</p>
+      </div>
+
+      <div class="container-chua6anh">
+        <div class="chuaanh">
+          <img src="../btap gk/image/hinhtron5.png" alt="" />
+        </div>
+        <h3>Lab equipment</h3>
+        <p>25 Items</p>
+      </div>
+
+      <div class="container-chua6anh">
+        <div class="chuaanh">
+          <img src="../btap gk/image/hinhtron6.png" alt="" />
+        </div>
+        <h3>Medkits</h3>
+        <p>25 Items</p>
+      </div>
+    </section>
+    <!-- chua3anh -->
+    <section class="chua3anh">
+      <div class="container-chua3anh">
+        <div class="noidung-chua3anh">
+          <div class="deal-chua3anh"><p>Sanitizer</p></div>
+          <h2>Hand sanitizer collection</h2>
+          <button>shop now</button>
+        </div>
+        <img src="../btap gk/image/xabonggg.png" alt="" />
+      </div>
+
+      <div class="container-chua3anh">
+        <div class="noidung-chua3anh">
+          <div class="deal-chua3anh"><p>Top deals</p></div>
+          <h2>Face wash sale collection</h2>
+          <button>Discover now</button>
+        </div>
+        <img src="../btap gk/image/xabongggg1.png" alt="" />
+      </div>
+
+      <div class="container-chua3anh">
+        <div class="noidung-chua3anh">
+          <div class="deal-chua3anh"><p>Face mask</p></div>
+          <h2>Facial mask deals save up to 50%</h2>
+          <button>Discover now</button>
+        </div>
+        <img src="../btap gk/image/xabonggg.png" alt="" />
+      </div>
+    </section>
+    <!-- Tiêu Đề -->
+    <section class="tieude-chung">
+      <h1>Latest health product</h1>
+    </section>
+    <!-- sanphamchua4anh -->
+    <section class="tatcasanpham">
+      <div class="wrapper-tatcasanpham">
+        <div class="container-tatcasanpham">
+          <div class="containerchuaanh-tatcasanpham">
+            <img src="../btap gk/image/maysoi.png" alt="" />
+            <button>Shop now</button>
+          </div>
+          <div class="noidung-tatcasanpham">
+            <h3>Microscope</h3>
+            <p>$45.00 USD <del></del></p>
+          </div>
+        </div>
+
+        <div class="container-tatcasanpham">
+          <div class="containerchuaanh-tatcasanpham">
+            <img src="../btap gk/image/donghodonhiptimm.png" alt="" />
+            <button>Shop now</button>
+          </div>
+          <div class="noidung-tatcasanpham">
+            <h3>Pulse oximeter</h3>
+            <p>$10.00 USD <del>$25.00 USD</del></p>
+          </div>
+        </div>
+
+        <div class="container-tatcasanpham">
+          <div class="containerchuaanh-tatcasanpham">
+            <img src="../btap gk/image/serum (1).png" alt="" />
+            <button>Shop now</button>
+          </div>
+          <div class="noidung-tatcasanpham">
+            <h3>Vitamin serum</h3>
+            <p>$20.00 USD <del>$25.00 USD</del></p>
+          </div>
+        </div>
+
+        <div class="container-tatcasanpham">
+          <div class="containerchuaanh-tatcasanpham">
+            <img src="../btap gk/image/serum (2).png" alt="" />
+            <button>Shop now</button>
+          </div>
+          <div class="noidung-tatcasanpham">
+            <h3>High protein </h3>
+            <p>$50.00 USD</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ô bảo hành -->
+    <section class="baohanh">
+      <div class="container-baohanh">
+        <div class="anhbaohanh">
+          <img src="../btap gk/image/baohanh].png" alt="" />
+          <img src="../btap gk/image/shield-check.png" alt="" class="overlay" />
+        </div>
+        <div class="noidung-baohanh">
+          <h3>30 days warranty</h3>
+          <p>enjoy peace of mind with warranty</p>
+        </div>
+      </div>
+
+      <div class="container-baohanh">
+        <div class="anhbaohanh">
+          <img src="../btap gk/image/baohanh].png" alt="khungbaohanh" />
+          <img
+            src="../btap gk/image/arrow-left-arrow-right.png"
+            alt="iconbaohanh"
+            class="overlay"
+          />
+        </div>
+        <div class="noidung-baohanh">
+          <h3>Exchange policy</h3>
+          <p>You’re satisfied with your purchase</p>
+        </div>
+      </div>
+
+      <div class="container-baohanh">
+        <div class="anhbaohanh">
+          <img src="../btap gk/image/baohanh].png" alt="" />
+          <img src="../btap gk/image/credit-card.png" alt="" class="overlay" />
+        </div>
+        <div class="noidung-baohanh">
+          <h3>Secure payment</h3>
+          <p>Shop with confidence every time</p>
+        </div>
+      </div>
+    </section>
+    <!-- Tiêu Đề -->
+    <section class="tieude-chung">
+      <h1>Explore Our store Collection</h1>
+    </section>
+    <!-- tatcasanpham -->
+    <section class="tatcasanpham">
+      <div class="wrapper-tatcasanpham">
+        <div class="container-tatcasanpham">
+          <div class="containerchuaanh-tatcasanpham">
+            <img src="../btap gk/image/thuoccc.png" alt="" />
+            <button>Shop now</button>
+          </div>
+          <div class="noidung-tatcasanpham">
+            <h3>B12 medicine</h3>
+            <p>$10.00 USD <del>$25.00 USD</del></p>
+          </div>
+        </div>
+
+        <div class="container-tatcasanpham">
+          <div class="containerchuaanh-tatcasanpham">
+            <img src="../btap gk/image/thuocc2.png" alt="" />
+            <button>Shop now</button>
+          </div>
+          <div class="noidung-tatcasanpham">
+            <h3>Tonometer</h3>
+            <p>$10.00 USD <del>$25.00 USD</del></p>
+          </div>
+        </div>
+
+        <div class="container-tatcasanpham">
+          <div class="containerchuaanh-tatcasanpham">
+            <img src="../btap gk/image/thuocc3.png" alt="" />
+            <button>Shop now</button>
+          </div>
+          <div class="noidung-tatcasanpham">
+            <h3>ECG cardiograph</h3>
+            <p>$10.00 USD <del>$25.00 USD</del></p>
+          </div>
+        </div>
+
+        <div class="container-tatcasanpham">
+          <div class="containerchuaanh-tatcasanpham">
+            <img src="../btap gk/image/thuoc4.png" alt="" />
+            <button>Shop now</button>
+          </div>
+          <div class="noidung-tatcasanpham">
+            <h3>Blood glucose meter</h3>
+            <p>$10.00 USD <del>$25.00 USD</del></p>
+          </div>
+        </div>
+
+        <div class="container-tatcasanpham">
+          <div class="containerchuaanh-tatcasanpham">
+            <img src="../btap gk/image/thuocc5.png" alt="" />
+            <button>Shop now</button>
+          </div>
+          <div class="noidung-tatcasanpham">
+            <h3>Lab hand gloves</h3>
+            <p>$10.00 USD <del>$25.00 USD</del></p>
+          </div>
+        </div>
+
+        <div class="container-tatcasanpham">
+          <div class="containerchuaanh-tatcasanpham">
+            <img src="../btap gk/image/thuocc6.png" alt="" />
+            <button>Shop now</button>
+          </div>
+          <div class="noidung-tatcasanpham">
+            <h3>Stethoscope</h3>
+            <p>$10.00 USD <del>$25.00 USD</del></p>
+          </div>
+        </div>
+
+        <div class="container-tatcasanpham">
+          <div class="containerchuaanh-tatcasanpham">
+            <img src="../btap gk/image/thuocc7.png" alt="" />
+            <button>Shop now</button>
+          </div>
+          <div class="noidung-tatcasanpham">
+            <h3>Inhaler pressure drop </h3>
+            <p>$10.00 USD <del>$25.00 USD</del></p>
+          </div>
+        </div>
+
+        <div class="container-tatcasanpham">
+          <div class="containerchuaanh-tatcasanpham">
+            <img src="../btap gk/image/thuocc8.png" alt="" />
+            <button>Shop now</button>
+          </div>
+          <div class="noidung-tatcasanpham">
+            <h3>Multi vitamin</h3>
+            <p>$10.00 USD <del>$25.00 USD</del></p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Dangky -->
+    <section class="discount">
+      <div class="container-discount">
+        <img src="../btap gk/image/uongthucc.png" alt="" />
+      </div>
+
+      <div class="container-discount">
+        <p>Join us newsletter</p>
+        <h1>Sign up for an Instant 15% Discount</h1>
+
+        <div class="dk-email">
+          <input type="email" placeholder="Enter Email" id="email-input" />
+          <button type="submit" id="open-register-modal">Sign up</button>
+        </div>
+      </div>
+    </section>
+    <!-- Tiêu Đề -->
+    <section class="tieude-chung">
+      <h1>Our happy clients</h1>
+    </section>
+    <!-- danhgia -->
+    <section class="danhgia">
+      <div class="container-danhgia">
+        <img src="../btap gk/image/DAUKEPNHAY1.png" alt="" />
+        <div class="noidung-danhgia">
+          I’m so impressed with this online medical store. The product selection
+          is extensive and the prices are great. I found everything i needed in
+          one place. The ordering process was easy, delivery was prompt, and the
+          items arrived in perfect condition. Plus, the customer service team
+          was incredibly helpful.
+        </div>
+      </div>
+    </section>
+    <!-- profile 4 nguoi -->
+    <section class="profile">
+      <div class="container-profile vien">
+        <div class="anh-profile">
+          <img src="../btap gk/image/boy1.png" alt="" />
+        </div>
+        <div class="name-profile">
+          <h3>James Wilson</h3>
+          <p>Manager</p>
+        </div>
+      </div>
+
+      <div class="container-profile">
+        <div class="anh-profile">
+          <img src="../btap gk/image/boy2.png" alt="" />
+        </div>
+        <div class="name-profile">
+          <h3>Henry Adams</h3>
+          <p>CEO</p>
+        </div>
+      </div>
+
+      <div class="container-profile">
+        <div class="anh-profile">
+          <img src="../btap gk/image/boy3.png" alt="" />
+        </div>
+        <div class="name-profile">
+          <h3>Ethan Harris</h3>
+          <p>Business manager</p>
+        </div>
+      </div>
+
+      <div class="container-profile">
+        <div class="anh-profile">
+          <img src="../btap gk/image/girl 1.png" alt="" />
+        </div>
+        <div class="name-profile">
+          <h3>Lily Baker</h3>
+          <p>Product manager</p>
+        </div>
+      </div>
+    </section>
+    <!-- Tiêu Đề -->
+    <section class="tieude-chung">
+      <h1>Follow us @medifit</h1>
+    </section>
+    <!-- 4 ảnh khác khung -->
+    <section class="follow">
+      <div class="container1-follow">
+        <img src="../btap gk/image/Mask.png" alt="" />
+      </div>
+      <div class="container2-follow">
+        <img src="../btap gk/image/Mask group.png" alt="" />
+      </div>
+      <div class="container3-follow">
+        <img
+          src="../btap gk/image/pill-box-arrangement-still-life 1.png"
+          alt=""
+        />
+      </div>
+      <div class="container4-follow">
+        <img src="../btap gk/image/Mask group (3).png" alt="" />
+      </div>
+    </section>
+
+    <!-- footer -->
+
+    <footer class="footer-custom">
+      <div class="footer-container">
+        <div class="footer-column">
+          <h6 class="footer-title">Pages</h6>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Shop</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Privacy policy</a></li>
+            <li><a href="#">FAQs</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-column">
+          <h6 class="footer-title">Utility</h6>
+          <ul>
+            <li><a href="#">Style guide</a></li>
+            <li><a href="#">Instruction</a></li>
+            <li><a href="#">Changelog</a></li>
+            <li><a href="#">Licenses</a></li>
+            <li><a href="#">Link in bio</a></li>
+            <li><a href="#">Error 404</a></li>
+            <li><a href="#">Password protected</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-center">
+          <div class="footer-logo">
+            <img src="../btap gk/image/logoheader.png" alt="Medifit Logo" class="medifit-logo-center"/>
+            <span>Medifit</span>
+          </div>
+          <p>We provides the ultimate solution for your online store and all the healthcare needs.</p>
+          <div class="social-icons">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+
+        <div class="footer-column footer-contact">
+          <h6 class="footer-title">Address</h6>
+          <p>
+            <i class="fas fa-map-marker-alt"></i> 1640 Parker Rd. Allentown, New Mexico 31134
+          </p>
+          <h6 class="footer-title contact-title">Contact</h6>
+          <p><i class="fas fa-envelope"></i> hello@gmail.com</p>
+          <p><i class="fas fa-phone"></i> (209) 555-0104</p>
+        </div>
+      </div>
+      
+      <div class="footer-divider"></div>
+
+      <div class="footer-bottom">
+        Design By <strong>Webestico</strong>. Powered By <strong>Webflow</strong>
+      </div>
+    </footer>
+
+    <!--  -->
+
+    <!-- modal dang nhap -->
+    <div id="login-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn" id="close-login-modal">&times;</span>
+            <h3 class="modal-title">Đăng Nhập Medifit</h3>
+            <form id="login-form">
+                <div class="form-group">
+                    <label for="login-email">Tài Khoản Email</label>
+                    <input type="text" id="login-email" required placeholder="Nhập email của bạn">
+                </div>
+                <div class="form-group">
+                    <label for="login-password">Mật Khẩu</label>
+                    <input type="password" id="login-password" required placeholder="Điền mật khẩu">
+                </div>
+                <button type="submit" class="submit-btn">Đăng Nhập</button>
+            </form>
+            <p id="login-message" class="login-message"></p>
+        </div>
+    </div>
+
+    <!-- modal dang ky -->
+
+    <div id="register-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn" id="close-register-modal">&times;</span>
+            <h3 class="modal-title">Đăng ký để được giảm 15% </h3>
+            <form id="register-form">
+                <div class="form-group">
+                    <label for="reg-email">Tài khoản email</label>
+                    <input type="text" id="reg-email" required placeholder="Nhập tài khoản email">
+                </div>
+                <div class="form-group">
+                    <label for="reg-password">Mật khẩu</label>
+                    <input type="password" id="reg-password" required placeholder="Nhập mật khẩu">
+                </div>
+                <div class="form-group">
+                    <label for="reg-confirm-password">Xác nhận mật khẩu</label>
+                    <input type="password" id="reg-confirm-password" required placeholder="Xác nhận mật khẩu">
+                </div>
+                <button type="submit" class="submit-btn">Đăng ký</button>
+            </form>
+            <p id="register-message" class="login-message"></p>
+        </div>
+    </div>
+    
+    <!-- modal thong tin profile -->
+     <div id="profile-detail-modal" class="modal">
+        <div class="modal-content profile-content">
+            <span class="close-btn" id="close-profile-modal">&times;</span>
+            <div class="profile-info-container">
+                <div class="profile-avatar" id="detail-avatar">
+                    </div>
+                <h3 class="modal-title" id="detail-name"></h3>
+                <p class="profile-job" id="detail-job"></p>
+                
+                <hr style="margin: 20px 0; border-top: 1px solid #e0e0e0;">
+
+                <div class="contact-details">
+                    <h4>Thông tin liên hệ</h4>
+                    <p><i class="fas fa-envelope"></i> Email: <span id="detail-email"></span></p>
+                    <p><i class="fas fa-phone"></i> Phone: <span id="detail-phone"></span></p>
+                    <p><i class="fas fa-map-marker-alt"></i> Address: <span id="detail-address"></span></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="add-to-cart-toast" class="cart-toast">
+    <i class="fas fa-check-circle"></i> Đã thêm vào giỏ hàng!
+</div>
+    <script src="script.js"></script>
+    </body>
+</html>
